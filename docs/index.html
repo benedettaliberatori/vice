@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Math rendering -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+ 
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Video-Language Entailment for Video Similarity Estimation</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- Replaced video with a single image -->
+      <img src="static/images/method_final.png" alt="Teaser image" style="width:100%; height:auto;" />
+
+      <h2 class="subtitle ">
+        <strong>Overview of ViCE:</strong> Given a video pair \((V_1, V_2)\) and a concept \(C_i\), ViCE processes the videos through two parallel branches. Each branch first generates a concept-conditioned caption for each video \((g_1, g_2)\), then performs video–caption entailment by comparing one video with the caption generated from its counterpart. The branches produce reasoning traces inside <strong><code>&lt;thinking&gt;...&lt;/thinking&gt;</code></strong> and similarity scores inside <strong><code>&lt;score&gt;...&lt;/score&gt;</code></strong>. The final similarity estimate \(s(V_1,V_2\mid C_i)\) is computed as the average of the scores generated from both branches.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Qualitative Results</h2>
+      <p>For each video pair, we present the <strong><span style="color: #304d6d; ">concept of interest</span></strong>  (\(C_i\)), the corresponding <span style="color: #8aa1b1;">concept-conditioned captions generated for each video (\(g_1, g_2\))</span> , two candidate reasoning traces (with <strong>key terms highlighted</strong>), and <span style="color: #0ea5e9;">ViCE predicted similarity scores</span> alongside the <span style="color: #f59e0b;">zero-shot baseline</span> and <span style="color: #22c55e;">ground-truth annotations</span>.</p>
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- Carousel Item 1 - Two videos side by side -->
+        <div class="item item-video1">
+          <div style="background: #304d6d; border: 2px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; text-align: center;">
+            <p style="font-weight: 600; color: #e2e8f0; margin: 0; font-size: 0.9rem;">Concept: Main Subjects</p>
+          </div>
+          <div class="columns is-gapless">
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video1a" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/3863_003.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                  \(g_1\): A woman performs a glute-focused leg press exercise under the guidance of a fitness instructor in a gym setting.
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video1b" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/883_000.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_2\): A woman performs leg exercises on a machine in a well-equipped gym.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="video-caption has-text-centered" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+         <pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows <strong>a woman</strong> performing leg exercises on a machine, which aligns with the reference description. The <strong>main subject is clearly the woman</strong> engaging in a workout activity. There is no indication of any other main subjects being present in the video that would significantly alter the score.
+The rubric level for this scenario would be 5, as the video depicts an extremely similar situation to the description, with the same cardinality (one person), <strong>no significant difference in age or gender</strong>, and the <strong>main focus being on the woman's exercise routine.</strong> <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;5&lt;/score&gt;</strong>
+</pre>
+<div style="text-align: center; margin: 0.5rem 0; padding: 0.25rem 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+  <span style="color: #666; font-size: 1rem; font-weight: 600;">• • •</span>
+</div>
+<pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows <strong> a woman</strong> performing a leg press exercise in a gym environment. The <strong>main subject is a single individual, a woman,</strong> who is engaged in a workout routine. There is no indication of another person being present as a fitness instructor or any other individuals sharing the space. The setting is consistent with a gym, featuring various exercise equipment typical for such an environment.
+The reference description mentions a "fitness instructor" which is not present in the video. Instead, the focus is solely on the woman performing the exercise. The video does not show any other subjects, making it a one-on-one scenario without the presence of a fitness instructor.
+Given these observations, the video <strong>does not match the description's mention of a fitness instructor</strong> and instead focuses on a single individual performing an exercise. This results in a significant <strong>difference in the number of subjects</strong> and their roles within the scene. <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;1&lt;/score&gt;</strong>
+</pre>
+          </p>
+          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">ViCE (Qwen2.5-VL-7B): </p>
+              <p class="video-caption has-text-centered" style="background: #f0f9ff; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #0ea5e9;"> 3.4/5.0 <img src="static/images/medal.png" alt="Medal" style="width: 30px; height: 30px; margin-left: 0.5rem; vertical-align: middle;"></p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Zero-shot (Qwen2.5-VL-7B):</p>
+              <p class="video-caption has-text-centered" style="background: #fefbf3; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #f59e0b;"> 3/5.0</p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Ground Truth:</p>
+              <p class="video-caption has-text-centered" style="background: #f0fdf4; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #22c55e;"> 3.75/5.0</p>
+            </div>
+          </div>
+  </div>
+
+        <!-- Carousel Item 2 - Two videos side by side -->
+        <div class="item item-video2">
+          <div style="background: #304d6d; border: 2px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; text-align: center;">
+            <p style="font-weight: 600; color: #e2e8f0; margin: 0; font-size: 0.9rem;">Concept:Technique</p>
+          </div>
+          <div class="columns is-gapless">
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video2a" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/IQbOHVMEQbw_385.98175_396.826.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_1\): Patting the fish dry with a paper towel.
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video2b" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/Em-XuhRmaYg_217.41747_228.59266.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                  \(g_2\): Rinsing the fish under running water.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="video-caption has-text-centered" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+         <pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows a person washing a piece of fish under running water in a kitchen sink, then patting it dry with a paper towel on a cutting board. The <strong>technique used for drying</strong> the fish with a paper towel <strong>is consistent</strong> with the described method. The video does not show any significant variations in the preparation technique beyond this. <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;5&lt;/score&gt;</strong>
+</pre>
+<div style="text-align: center; margin: 0.5rem 0; padding: 0.25rem 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+  <span style="color: #666; font-size: 1rem; font-weight: 600;">• • •</span>
+</div>
+<pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows the person patting the fish dry with a paper towel after washing it under running water. The <strong>technique used is similar</strong> to the described 'Technique' of patting the fish dry with a paper towel. <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;4&lt;/score&gt;</strong> 
+</pre>
+        </p>          
+          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">ViCE (LLaVA-Video-7B): </p>
+              <p class="video-caption has-text-centered" style="background: #f0f9ff; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #0ea5e9;"> 4.7/5.0 <img src="static/images/medal.png" alt="Medal" style="width: 30px; height: 30px; margin-left: 0.5rem; vertical-align: middle;"></p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Zero-shot (LLaVA-Video-7B):</p>
+              <p class="video-caption has-text-centered" style="background: #fefbf3; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #f59e0b;"> 4/5.0</p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Ground Truth:</p>
+              <p class="video-caption has-text-centered" style="background: #f0fdf4; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #22c55e;"> 4.5/5.0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Item 3 - Two videos side by side -->
+        <div class="item item-video3">
+          <div style="background: #304d6d; border: 2px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; text-align: center;">
+            <p style="font-weight: 600; color: #e2e8f0; margin: 0; font-size: 0.9rem;">Concept: Location</p>
+          </div>
+          <div class="columns is-gapless">
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video3a" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/3368_004.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                  \(g_1\): A canyon with red rock formations and a clear blue sky.
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video3b" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/574_011.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                  \(g_2\): A serene pond surrounded by lush greenery and a wooden structure.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="video-caption has-text-centered" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+         <pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video <strong>does not match the described 'Location'</strong> of a serene pond surrounded by lush greenery and a wooden structure. The background in the video shows <strong>red rock formations</strong>, suggesting a desert or arid environment rather than a lush, green area. <strong>&lt;thinking&gt;</strong>
+<strong>&lt;score&gt;1&lt;/score&gt;</strong>
+</pre>
+<div style="text-align: center; margin: 0.5rem 0; padding: 0.25rem 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+  <span style="color: #666; font-size: 1rem; font-weight: 600;">• • •</span>
+</div>
+<pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video <strong>does not match the description of a canyon</strong> with red rock formations and a clear blue sky. Instead, it <strong>shows an outdoor setting</strong> by a body of water with vegetation and a wooden structure on stilts partially submerged in water. <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;2&lt;/score&gt;</strong> 
+</pre>
+        </p>          
+          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">ViCE (LLaVA-OV-7B): </p>
+              <p class="video-caption has-text-centered" style="background: #f0f9ff; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #0ea5e9;"> 1.6/5.0 <img src="static/images/medal.png" alt="Medal" style="width: 30px; height: 30px; margin-left: 0.5rem; vertical-align: middle;"></p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Zero-shot (LLaVA-OV-7B):</p>
+              <p class="video-caption has-text-centered" style="background: #fefbf3; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #f59e0b;"> 3.0/5.0</p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Ground Truth:</p>
+              <p class="video-caption has-text-centered" style="background: #f0fdf4; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #22c55e;"> 1.5/5.0</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Carousel Item 5 - Another copy of Item 3 -->
+        <div class="item item-video5">
+          <div style="background: #304d6d; border: 2px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; text-align: center;">
+            <p style="font-weight: 600; color: #e2e8f0; margin: 0; font-size: 0.9rem;">Concept: Action</p>
+          </div>
+          <div class="columns is-gapless">
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video5a" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/NrAyMU63pIs_594.44844_614.20952.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_1\): Flipping chicken pieces in a pan with a spatula.
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video5b" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/zSo-JyptZtE_596.40975_611.55066.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_2\): Removing a tray of golden-brown baked items from the oven.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="video-caption has-text-centered" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+         <pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows a person using a spatula to <strong>flip pieces of chicken in a pan</strong> on a stovetop. The chicken appears to be cooked and has some herbs on top, indicating it might have been baked or pan-fried. There is <strong>no mention of removing a tray from the oven</strong> in the reference description, which suggests that the actions in the video do not match the described 'Actions'. The <strong>sequence and content of the steps in the video are entirely different</strong> from what is described in the reference. <strong>&lt;thinking&gt;</strong>
+<strong>&lt;score&gt;1&lt;/score&gt;</strong>
+</pre>
+<div style="text-align: center; margin: 0.5rem 0; padding: 0.25rem 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+  <span style="color: #666; font-size: 1rem; font-weight: 600;">• • •</span>
+</div>
+<pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows a person <strong>removing a tray of food from an oven</strong>, which appears to be a baked dish rather than flipping chicken pieces in a pan. The <strong>actions in the video do not match the reference description</strong> at all, as they involve baking rather than flipping chicken. <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;2&lt;/score&gt;</strong> 
+</pre>
+        </p>          
+          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">ViCE (LLaVA-OV-7B): </p>
+              <p class="video-caption has-text-centered" style="background: #f0f9ff; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #0ea5e9;"> 1.6/5.0 <img src="static/images/medal.png" alt="Medal" style="width: 30px; height: 30px; margin-left: 0.5rem; vertical-align: middle;"></p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Zero-shot (LLaVA-OV-7B):</p>
+              <p class="video-caption has-text-centered" style="background: #fefbf3; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #f59e0b;"> 3.0/5.0</p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Ground Truth:</p>
+              <p class="video-caption has-text-centered" style="background: #f0fdf4; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #22c55e;"> 1.0/5.0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Item 6 - Copy of Item 5 -->
+        <div class="item item-video6">
+          <div style="background: #304d6d; border: 2px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; text-align: center;">
+            <p style="font-weight: 600; color: #e2e8f0; margin: 0; font-size: 0.9rem;">Concept: Action</p>
+          </div>
+          <div class="columns is-gapless">
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video6a" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/dVsk7XozWoY_29.55259_54.9914.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_1\): Sprinkling spices over raw chicken pieces in a bowl.
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video6b" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/7MlwtWFPurc_299.80041_316.45563.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_2\): Dredging chicken pieces in flour.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="video-caption has-text-centered" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+         <pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows a person handling chicken pieces that appear to be <strong>coated in flour rather than sprinkled with spices</strong>. The person is seen placing the chicken into a bowl of flour, which suggests <strong>a breading process rather than sprinkling spices</strong>. This <strong>action does not match</strong> the reference description of sprinkling spices over raw chicken pieces in a bowl. <strong>&lt;thinking&gt;</strong>
+<strong>&lt;score&gt;1&lt;/score&gt;</strong>
+</pre>
+<div style="text-align: center; margin: 0.5rem 0; padding: 0.25rem 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+  <span style="color: #666; font-size: 1rem; font-weight: 600;">• • •</span>
+</div>
+<pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows raw chicken pieces being seasoned with various spices, which includes black pepper, paprika, and possibly other seasonings. The process involves <strong>sprinkling these spices over the chicken</strong>, but there is <strong>no visible flour being used for dredging</strong>. Therefore, the sequence and content of the <strong>steps are entirely different</strong> from the reference description. <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;1&lt;/score&gt;</strong> 
+</pre>
+        </p>          
+          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">ViCE (Qwen2.5-VL-7B): </p>
+              <p class="video-caption has-text-centered" style="background: #f0f9ff; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #0ea5e9;"> 1.0/5.0 <img src="static/images/medal.png" alt="Medal" style="width: 30px; height: 30px; margin-left: 0.5rem; vertical-align: middle;"></p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Zero-shot (Qwen2.5-VL-7B):</p>
+              <p class="video-caption has-text-centered" style="background: #fefbf3; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #f59e0b;"> 3.0/5.0</p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Ground Truth:</p>
+              <p class="video-caption has-text-centered" style="background: #f0fdf4; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #22c55e;"> 1.0/5.0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Item 7 - Copy of Item 6 -->
+        <div class="item item-video7">
+          <div style="background: #304d6d; border: 2px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; text-align: center;">
+            <p style="font-weight: 600; color: #e2e8f0; margin: 0; font-size: 0.9rem;">Concept: Ingredients</p>
+          </div>
+          <div class="columns is-gapless">
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video7a" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/wfqckVu3n-o_82.41642_95.67883.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_1\): Butter, flour, and eggs being mixed together in a bowl.
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video7b" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/mfqh1dYAJ68_77.91024_89.94826.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_2\): Yellow mashed potatoes with green herbs being stirred in a bowl.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="video-caption has-text-centered" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+         <pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows a person mixing ingredients in a bowl using a red spatula. The mixture appears to be a <strong>batter-like consistency</strong>, which suggests that it could be for baking or cooking something other than mashed potatoes. There are <strong>no visible herbs or yellow mashed potatoes</strong> in the video. The ingredients seem to include <strong>flour, possibly eggs, and a liquid component</strong>, but there's no indication of green herbs or mashed potatoes.
+Comparison to the reference description: The video does not match the description at all. The main ingredient in the video is not mashed potatoes, and there are no green herbs present. The ingredients appear to be for a different recipe altogether. <strong>&lt;thinking&gt;</strong>
+<strong>&lt;score&gt;1&lt;/score&gt;</strong>
+</pre>
+<div style="text-align: center; margin: 0.5rem 0; padding: 0.25rem 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+  <span style="color: #666; font-size: 1rem; font-weight: 600;">• • •</span>
+</div>
+<pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows a person mixing a <strong>yellowish mixture</strong> in a metal bowl using a wooden spoon. The mixture appears to be a combination of <strong>mashed potatoes</strong> or a similar food item, as there are <strong>no visible signs of butter, flour, or eggs</strong> that would indicate the preparation of a batter or dough. The ingredients in the video do not match the reference description at all. The score should reflect this significant discrepancy in the main ingredients. <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;1&lt;/score&gt;</strong> 
+</pre>
+        </p>          
+          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">ViCE (Qwen2.5-VL-7B): </p>
+              <p class="video-caption has-text-centered" style="background: #f0f9ff; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #0ea5e9;"> 1.0/5.0 <img src="static/images/medal.png" alt="Medal" style="width: 30px; height: 30px; margin-left: 0.5rem; vertical-align: middle;"></p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Zero-shot (Qwen2.5-VL-7B):</p>
+              <p class="video-caption has-text-centered" style="background: #fefbf3; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #f59e0b;"> 3.0/5.0</p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Ground Truth:</p>
+              <p class="video-caption has-text-centered" style="background: #f0fdf4; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #22c55e;"> 1.3/5.0</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="item item-video7">
+          <div style="background: #304d6d; border: 2px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; text-align: center;">
+            <p style="font-weight: 600; color: #e2e8f0; margin: 0; font-size: 0.9rem;">Concept: Main Objects</p>
+          </div>
+          <div class="columns is-gapless">
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video7a" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/4700_002.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_1\): A group of cyclists riding on a road.
+                </p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="video-wrapper">
+                <video poster="" id="video7b" controls muted loop height="100%" preload="metadata">
+                  <source src="static/videos/1229_003.mp4" type="video/mp4">
+                </video>
+                <p class="video-caption has-text-centered" style="color: #8aa1b1;">
+                 \(g_2\): "A person running on a beach and a person running on a road.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="video-caption has-text-centered" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+         <pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video shows a group of cyclists riding on a road, not a person running. The <strong>main objects</strong> in the video are the cyclists and their <strong>bikes</strong>, which are not the same as a person running. The cyclists are wearing <strong>cycling gear and helmets</strong>, and they are riding on a <strong>paved road surrounded by trees and greenery</strong>. The video also includes <strong>a map with a route and some statistics</strong>, but these are not the main objects. <strong>&lt;thinking&gt;</strong>
+<strong>&lt;score&gt;1&lt;/score&gt;</strong>
+</pre>
+<div style="text-align: center; margin: 0.5rem 0; padding: 0.25rem 0; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+  <span style="color: #666; font-size: 1rem; font-weight: 600;">• • •</span>
+</div>
+<pre style="white-space: pre-wrap; text-align:left;">
+<strong>&lt;thinking&gt;</strong> The video does not feature a group of cyclists riding on a road. Instead, it showcases a person running along various paths, with different activities and scenes. The <strong>main objects</strong> in the video are related to running and fitness, such as <strong>running shoes, a cap, and running tracks</strong>, but they do not include a group of cyclists. <strong>&lt;/thinking&gt;</strong>
+<strong>&lt;score&gt;2&lt;/score&gt;</strong> 
+</pre>
+        </p>          
+          <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">ViCE (LLaVA-Video-7B): </p>
+              <p class="video-caption has-text-centered" style="background: #f0f9ff; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #0ea5e9;"> 1.6/5.0 <img src="static/images/medal.png" alt="Medal" style="width: 30px; height: 30px; margin-left: 0.5rem; vertical-align: middle;"></p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Zero-shot (LLaVA-Video-7B):</p>
+              <p class="video-caption has-text-centered" style="background: #fefbf3; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #f59e0b;"> 4.0/5.0</p>
+            </div>
+            <div style="flex: 1;">
+              <p class="video-caption has-text-centered" style="font-weight: 600; margin-bottom: 0.5rem;">Ground Truth:</p>
+              <p class="video-caption has-text-centered" style="background: #f0fdf4; padding: 0.75rem; border-radius: 8px; border-left: 4px solid #22c55e;"> 1.8/5.0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+  </body>
+  </html>
